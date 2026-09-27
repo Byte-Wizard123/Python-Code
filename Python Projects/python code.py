@@ -1,0 +1,5 @@
+print("Hello mike")
+print("how old are you said mark")
+print("i am 7 in a half said mike")
+print("call me when you,re eight so that we can have a birthday see you soon said mark")
+print("okay bye said mike")

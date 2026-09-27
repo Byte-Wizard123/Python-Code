@@ -1,0 +1,8 @@
+print("monday")
+print("tuesday")
+print("wedsday")
+print("thursady")
+print("friday")
+print("satruday")
+print("sunday")
+print("days of the week")
