@@ -1,0 +1,23 @@
+from openai import OpenAI
+
+client = OpenAI()
+
+def agent(goal):
+    response = client.responses.create(
+        model="gpt-5.6",
+        instructions="""
+        You are a helpful autonomous agent.
+        Break the user's goal into steps, reason about what needs to be done,
+        and provide the final result clearly.
+        """,
+        input=goal,
+    )
+
+    return response.output_text
+
+
+if __name__ == "__main__":
+    goal = input("What should I do? ")
+    result = agent(goal)
+    print("\nAgent:")
+    print(result)
